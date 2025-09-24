@@ -17,14 +17,14 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Architecture
+                Architecture Student
                 <span className="block bg-accent-gradient bg-clip-text text-transparent">
-                  Student Association
+                  Association of Bhutan
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                Building tomorrow's architects through collaboration, learning, and innovation. 
-                Join our community of passionate design thinkers.
+                Cultivating an architecture community in Bhutan where students, alumni, and professionals 
+                collaborate to design with wisdom, purpose, and balance, aligned with Gross National Happiness.
               </p>
             </div>
 
@@ -34,7 +34,7 @@ const Hero = () => {
                 size="lg" 
                 className="bg-hero-gradient hover:opacity-90 text-lg px-8 py-3 group"
               >
-                Join Our Community
+                Join ASAB Community
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 

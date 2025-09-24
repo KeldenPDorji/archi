@@ -6,46 +6,70 @@ import { Users, Target, Eye, Download } from "lucide-react";
 const About = () => {
   const executives = [
     {
-      name: "Sarah Chen",
+      name: "Tenzin Norbu",
       role: "President",
       year: "5th Year",
-      specialty: "Sustainable Design",
+      specialty: "Sustainable Design & GNH Integration",
     },
     {
-      name: "Marcus Williams",
+      name: "Pema Dolkar",
       role: "Vice President",
       year: "4th Year", 
-      specialty: "Urban Planning",
+      specialty: "Traditional Architecture",
     },
     {
-      name: "Aisha Patel",
+      name: "Karma Wangchuk",
+      role: "Academic Coordinator",
+      year: "4th Year",
+      specialty: "Digital Architecture & BIM",
+    },
+    {
+      name: "Dechen Lhamo",
       role: "Events Coordinator",
       year: "3rd Year",
-      specialty: "Digital Architecture",
+      specialty: "Cultural Preservation",
     },
     {
-      name: "Jordan Kim",
-      role: "Resources Manager",
+      name: "Sonam Tshering",
+      role: "Secretary",
+      year: "3rd Year",
+      specialty: "Documentation & Archives",
+    },
+    {
+      name: "Yangchen Dolma",
+      role: "Treasurer",
       year: "4th Year",
-      specialty: "Heritage Conservation",
+      specialty: "Financial Management",
+    },
+    {
+      name: "Jigme Namgyal",
+      role: "PR & Media Head",
+      year: "3rd Year",
+      specialty: "Digital Communications",
+    },
+    {
+      name: "Choden Wangmo",
+      role: "Welfare & Support Officer",
+      year: "2nd Year",
+      specialty: "Student Well-being",
     },
   ];
 
   const values = [
     {
       icon: Users,
-      title: "Community",
-      description: "Building connections between students, faculty, and industry professionals."
+      title: "Community Vitality",
+      description: "Strong ties between students, alumni, and local communities through design-build projects and cultural collaboration."
     },
     {
       icon: Target,
-      title: "Excellence",
-      description: "Fostering academic and professional growth through high-quality programs."
+      title: "Cultural Preservation",
+      description: "Linking Bhutanese identity with modern architecture through workshops with traditional artisans."
     },
     {
       icon: Eye,
-      title: "Innovation",
-      description: "Embracing new technologies and sustainable design practices."
+      title: "Environmental Sustainability",
+      description: "Focus on passive design, traditional timber use, and climate adaptation aligned with GNH values."
     },
   ];
 
@@ -55,11 +79,11 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            About ASA
+            About ASAB
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            The Architecture Student Association is the voice of architecture students, 
-            dedicated to enhancing the academic experience and building professional networks.
+            The Architecture Student Association of Bhutan cultivates an architecture community where students, alumni, 
+            and professionals collaborate to design with wisdom, purpose, and balance, aligned with Gross National Happiness (GNH).
           </p>
         </div>
 
@@ -74,8 +98,8 @@ const About = () => {
                 <h3 className="font-heading text-xl font-semibold">Our Mission</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                To create a vibrant community that supports academic excellence, 
-                professional development, and innovative thinking in architecture and design.
+                To empower architecture students with academic, professional, cultural, and ethical support, 
+                while ensuring design education contributes to collective well-being, cultural preservation, and sustainable futures.
               </p>
             </CardContent>
           </Card>
@@ -89,8 +113,8 @@ const About = () => {
                 <h3 className="font-heading text-xl font-semibold">Our Vision</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                To be the leading student organization that bridges academia and practice, 
-                fostering the next generation of visionary architects and designers.
+                To cultivate an architecture community in Bhutan where students, alumni, and professionals 
+                collaborate to design with wisdom, purpose, and balance, aligned with the values of Gross National Happiness (GNH).
               </p>
             </CardContent>
           </Card>

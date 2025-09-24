@@ -6,8 +6,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "About", href: "#about", icon: Users },
-    { name: "Events", href: "#events", icon: Calendar },
+    { name: "About ASAB", href: "#about", icon: Users },
+    { name: "Events & Culture", href: "#events", icon: Calendar },
+    { name: "Alumni Network", href: "#alumni", icon: Users },
     { name: "Resources", href: "#resources", icon: BookOpen },
     { name: "Contact", href: "#contact", icon: Phone },
   ];
@@ -18,19 +19,19 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-hero-gradient rounded-sm flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">A</span>
+            <div className="w-7 h-7 sm:w-8 sm:h-8 bg-hero-gradient rounded-sm flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-base sm:text-lg">A</span>
             </div>
-            <span className="font-heading font-semibold text-xl">ASA</span>
+            <span className="font-heading font-semibold text-lg sm:text-xl">ASAB</span>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium"
+                className="text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium text-sm xl:text-base whitespace-nowrap"
               >
                 {item.name}
               </a>
@@ -38,46 +39,49 @@ const Header = () => {
           </nav>
 
           {/* CTA Button - Desktop */}
-          <div className="hidden md:block">
-            <Button variant="default" className="bg-hero-gradient hover:opacity-90 transition-opacity">
-              Join ASA
+          <div className="hidden lg:block">
+            <Button variant="default" size="sm" className="bg-hero-gradient hover:opacity-90 transition-opacity text-sm xl:text-base">
+              Join ASAB
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary"
+            className="lg:hidden p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+            aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border bg-background">
-            <nav className="flex flex-col space-y-4">
+          <div className="lg:hidden py-4 border-t border-border bg-background/95 backdrop-blur-sm">
+            <nav className="flex flex-col space-y-2">
               {navItems.map((item) => {
                 const Icon = item.icon;
                 return (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="flex items-center space-x-3 px-3 py-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                    className="flex items-center space-x-3 px-4 py-3 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors duration-200"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    <Icon size={20} />
-                    <span>{item.name}</span>
+                    <Icon size={18} />
+                    <span className="font-medium">{item.name}</span>
                   </a>
                 );
               })}
-              <Button 
-                variant="default" 
-                className="mt-4 bg-hero-gradient hover:opacity-90"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Join ASA
-              </Button>
+              <div className="px-4 pt-4">
+                <Button 
+                  variant="default" 
+                  className="w-full bg-hero-gradient hover:opacity-90 transition-opacity"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Join ASAB
+                </Button>
+              </div>
             </nav>
           </div>
         )}

@@ -3,19 +3,19 @@ import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   const quickLinks = [
-    { name: "About Us", href: "#about" },
-    { name: "Events", href: "#events" },
-    { name: "Resources", href: "#resources" },
+    { name: "About ASAB", href: "#about" },
+    { name: "Events & Culture", href: "#events" },
+    { name: "Alumni Network", href: "#alumni" },
     { name: "Publications", href: "#publications" },
     { name: "Contact", href: "#contact" },
   ];
 
   const resourceLinks = [
-    { name: "Software Tutorials", href: "#" },
-    { name: "Design Templates", href: "#" },
+    { name: "Resource Library", href: "#" },
+    { name: "Past Question Papers", href: "#" },
     { name: "Thesis Archive", href: "#" },
-    { name: "Career Guide", href: "#" },
-    { name: "Portfolio Tips", href: "#" },
+    { name: "Design Sheet Samples", href: "#" },
+    { name: "Portfolio Templates", href: "#" },
   ];
 
   const socialLinks = [
@@ -40,27 +40,27 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-accent-gradient rounded-sm flex items-center justify-center">
                   <span className="text-accent-foreground font-bold text-lg">A</span>
                 </div>
-                <span className="font-heading font-semibold text-xl">ASA</span>
+                <span className="font-heading font-semibold text-xl">ASAB</span>
               </div>
               
               <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-                Building tomorrow's architects through collaboration, learning, and innovation. 
-                Join our community of passionate design thinkers.
+                Cultivating an architecture community in Bhutan where students, alumni, and professionals 
+                collaborate to design with wisdom, purpose, and balance, aligned with Gross National Happiness (GNH).
               </p>
 
               {/* Contact Info */}
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-4 w-4 text-accent" />
-                  <span className="text-sm text-primary-foreground/80">Architecture Building, Room 205</span>
+                  <span className="text-sm text-primary-foreground/80">College of Science & Technology, Thimphu</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-accent" />
-                  <span className="text-sm text-primary-foreground/80">info@architecturestudents.org</span>
+                  <span className="text-sm text-primary-foreground/80">info@asab.bt</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-4 w-4 text-accent" />
-                  <span className="text-sm text-primary-foreground/80">+1 (555) 123-4567</span>
+                  <span className="text-sm text-primary-foreground/80">+975 2 351 004</span>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@ const Footer = () => {
               {/* Newsletter Signup */}
               <div className="mb-6">
                 <p className="text-sm text-primary-foreground/80 mb-4">
-                  Get the latest updates on events and resources.
+                  Join ASAB community - get updates on workshops, exhibitions, and networking events.
                 </p>
                 <div className="flex flex-col space-y-2">
                   <input
@@ -150,7 +150,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="text-sm text-primary-foreground/60">
-              © 2024 Architecture Student Association. All rights reserved.
+              © 2025 Architecture Student Association of Bhutan (ASAB). All rights reserved.
             </div>
             
             <div className="flex items-center space-x-6">
